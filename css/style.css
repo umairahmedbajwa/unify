@@ -2,126 +2,42 @@
 /* font-family: 'Poppins', sans-serif; */
 
 body {
-	font-family: "Playfair Display", serif;
+	/* font-family: "Playfair Display", serif; */
+	padding-top: 50px;
 }
 
 * {
 	box-sizing: border-box;
+	/* outline: 1px solid red; */
 }
 
 /* Typography */
-a {
-	color: rgba(71, 71, 71, 0.849);
-	font-weight: 700;
-}
-a:hover {
-	text-decoration: none;
-	color: black;
-	cursor: pointer;
-}
-.homeImg {
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	max-width: 100%;
-	min-width: 100%;
-	min-height: 100%;
-	max-height: 100%;
-	position: fixed;
-	z-index: -2;
+
+.vl {
+	border-left: 1px solid grey;
+	/* margin-right: 5px; */
 }
 
-.overlayB {
-	background-color: rgba(0, 0, 0, 0.15);
-	color: white;
-	display: block;
-	font-family: "Playfair Display", serif;
-	min-height: 100%;
-	position: fixed;
-	width: 100%;
-}
+/* helper classes */
 
-.centered {
-	color: blanchedalmond;
-	position: fixed;
-	left: 60%;
-	text-shadow: 3px 3px 8px black;
-	top: 75%;
-}
-
-.centered h3 {
-	font-weight: 900;
-}
-.container-img {
-	color: black;
-	position: relative;
-}
-
-.login-form {
-	padding: 30px 80px;
-}
-
-input[type="email"],
-input[type="password"],
-textarea {
-	background-color: #e2e0e0c0;
-	border: none;
-}
-
-/* Helper classes */
 .px-0 {
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
-.mb-20 {
-	margin-bottom: 20px;
+.ml-6 {
+	margin-left: 60px;
+}
+.ml-7 {
+	margin-left: 70px !important;
+}
+.ml-10 {
+	margin-left: 100px !important;
 }
 
-.br-20 {
-	border-radius: 22px;
+.mr-5 {
+	margin-right: 5px;
 }
-
-.mx-20 {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.mt-20 {
-	margin-top: 20px;
-}
-
-.py-1 {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-/* Media queries */
-@media only screen and (max-width: 600px) {
-	a {
-		color: aliceblue;
-	}
-	a:hover {
-		color: rgb(203, 212, 219);
-	}
-	body {
-		background-attachment: fixed;
-		background-image: url(../images/home-3.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: aliceblue;
-		max-width: 100%;
-		min-width: 100%;
-		min-height: 100%;
-		max-height: 100%;
-		position: fixed;
-		text-shadow: 3px 3px 8px black;
-		z-index: -2;
-	}
-	.container-img img {
-		display: none;
-	}
-	.overlayB {
-		background-color: rgba(0, 0, 0, 0);
-	}
+.inline {
+	display: inline;
 }
