@@ -18,8 +18,19 @@ body {
 	/* margin-right: 5px; */
 }
 
+.bl {
+	border-left: 1px solid #ddd;
+}
+
+.bb {
+	border-bottom: 1px solid #ddd;
+}
+
 /* helper classes */
 
+.p-1 {
+	padding: 15px;
+}
 .px-0 {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
@@ -30,16 +41,42 @@ body {
 	padding-right: 10px !important;
 }
 
+.py-3 {
+	padding-bottom: 30px !important;
+	padding-top: 30px !important;
+}
 .pr-0 {
 	padding-right: 0 !important;
 }
 .pr-1 {
 	padding-right: 10px !important;
 }
+.pr-2 {
+	padding-right: 5px !important;
+}
 .pb-0 {
 	padding-bottom: 0;
 }
 
+.pb-5 {
+	padding-bottom: 50px;
+}
+
+.pl-0 {
+	padding-left: 0 !important;
+}
+
+.pl-1 {
+	padding-left: 5px !important;
+}
+
+.my-5 {
+	margin-top: 50px !important;
+	margin-bottom: 50px !important;
+}
+.ml-0 {
+	margin-left: 0 !important;
+}
 .ml-6 {
 	margin-left: 50px;
 }
@@ -54,6 +91,9 @@ body {
 	margin-right: 5px;
 }
 
+.mt-1 {
+	margin-top: 5px !important;
+}
 .mt-6 {
 	margin-top: 74px !important;
 }
@@ -61,8 +101,17 @@ body {
 	margin-top: 100px !important;
 }
 
+.mb-10 {
+	margin-bottom: 100px !important;
+}
+
 .wd-90 {
 	width: 85% !important;
+}
+
+.h-5 {
+	min-height: 600px !important;
+	/* max-height: 500px !important; */
 }
 
 .bg-primary {
@@ -70,11 +119,25 @@ body {
 	border: 3px solid rgb(19, 18, 18);
 }
 
+.bg-grey {
+	background-color: rgba(206, 203, 203, 0.747) !important;
+}
+
+.d-block {
+	display: block;
+}
+
+.center-align {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
 /* --------------- */
 
 .secondNav {
 	background-color: white;
 	border: none;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	/* min-height: 100px; */
 	/* line-height: 100px; */
 }
@@ -82,6 +145,11 @@ body {
 .navbar {
 	margin-bottom: 0;
 }
+
+.navbar-right li a:hover {
+	color: #3bb18f !important;
+}
+
 .secondNav a {
 	color: black !important;
 	font-size: 42px !important;
@@ -215,4 +283,311 @@ a.abc {
 }
 img {
 	max-width: 100%;
+}
+
+/* Carousel overlay text  */
+.carousel-overlay {
+	color: #fff;
+	position: absolute;
+	z-index: 11;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center !important;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	right: 15%;
+	top: 70px;
+	left: 15%;
+}
+
+.carousel-overlay h1 {
+	font-size: 54px !important;
+	font-weight: 800;
+}
+
+.carousel-overlay h2 {
+	color: wheat;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.transparent-btn {
+	background-color: transparent;
+	color: wheat;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.transparent-btn:hover {
+	background-color: rgba(255, 235, 205, 0.342);
+}
+
+/* Features */
+
+.feature-h {
+	color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+	/* text-align: left; */
+}
+
+.feature-d {
+	color: grey;
+	/* text-align: left !important; */
+}
+
+/* Categories */
+.cat-overlay {
+	bottom: 4.14286rem;
+	color: black;
+	left: 4.14286rem;
+	position: absolute;
+	/* text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6); */
+}
+
+.cat-overlay h2 {
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+/* Featured products */
+
+.feature-discription {
+	color: black;
+	max-width: 600px;
+	/* text-align: center; */
+	margin: 0 auto 50px;
+}
+
+.feature-discription p {
+	color: #777;
+}
+
+.cart-fav {
+	float: right;
+	line-height: 1.1;
+}
+
+.card-info h5 {
+	color: black !important;
+	font-size: 16px !important;
+	font-weight: 500;
+}
+
+.card-cat {
+	color: #999;
+	font-size: 13px;
+}
+
+.card-price {
+	color: black;
+	font-size: 17px;
+}
+
+/* promo block */
+
+.promo-block {
+	background-color: #eef1f8 !important;
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+.promo-price {
+	background-color: #3bb18f !important;
+	border-radius: 50%;
+	border: 5px solid white;
+	color: white;
+	position: absolute;
+	height: 85px;
+	width: 85px;
+	text-align: center;
+	top: 80px;
+}
+
+.promo-price h2 {
+	font-size: 22px;
+	line-height: 1.6;
+}
+
+.cent-size {
+	font-size: 16px;
+}
+
+.promo-block-left h2 {
+	color: #3bb18f !important;
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+.promo-block-left h1 {
+	color: black;
+	font-size: 75px;
+	margin-top: 0;
+}
+
+.lead-p {
+	color: #777;
+	font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 30px;
+}
+
+.btn-promo {
+	background-color: #3bb18f;
+	border: none;
+	font-size: 12px;
+	padding: 12px 25px;
+}
+
+.btn-promo:hover {
+	background-color: #39a889d8;
+}
+
+/* New arrivals  */
+
+.article {
+	border: 1px solid #eee;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.article-right {
+	float: right;
+	text-align: left;
+}
+
+.article-right h5 {
+	color: black !important;
+	font-size: 16px !important;
+	font-weight: 500;
+}
+
+.article img {
+	height: 100px;
+	width: 100px;
+}
+
+/* Categories flex  */
+
+.flex-1 {
+	left: 55%;
+	position: absolute;
+	text-align: right;
+	top: 30%;
+}
+
+.flex-1 h2 {
+	color: white;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.flex-1 p {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.left-flex.bg-grey img {
+	overflow: hidden;
+	padding-top: 70px;
+}
+
+.left-flex:hover {
+	color: #3bb18f;
+	cursor: pointer;
+}
+
+.flex-2 {
+	left: 27%;
+	position: absolute;
+	text-align: center;
+	/* top: 80%; */
+}
+
+.flex-2 h3 {
+	font-size: 20px;
+	font-weight: 500;
+	/* text-align: center; */
+}
+
+.flex-2 p {
+	color: #3bb18f;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* blogs news */
+
+.opa-3 {
+	background-color: rgba(0, 0, 0, 0.39);
+	width: 90%;
+	top: 0;
+	position: absolute;
+	min-height: 420px;
+}
+.blog-overlay {
+	/* background-color: rgba(0, 0, 0, 0.344); */
+	color: white;
+	/* left: 30%; */
+	position: absolute;
+	top: 70%;
+	width: 90%;
+	text-align: center;
+}
+
+.overlay img {
+	min-height: 420px;
+	max-height: 420px;
+}
+
+.blog-cat {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.blog-overlay h2 {
+	font-size: 20px;
+}
+
+.blog-overlay h2:hover {
+	color: #3bb18f;
+	cursor: pointer;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.blog-overlay h4 {
+	color: rgba(255, 255, 255, 0.7) !important;
+	font-size: 11px;
+}
+
+.blog-overlay a {
+	color: inherit;
+}
+
+.blog-date {
+	/* font-size: 11px; */
+}
+
+.wrapper {
+	position: relative;
+}
+.wrapper span {
+	position: absolute;
+	top: -2px;
+	right: -2px;
+}
+
+.badge {
+	position: absolute;
+	top: 5px;
+	right: 2px;
+	height: 18px;
+	display: block;
+	width: 19px;
+	text-align: center;
+	background-color: #3bb18f;
+	line-height: 12px;
 }
