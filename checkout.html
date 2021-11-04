@@ -28,7 +28,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="shortcut icon" href="images/logo1.png" />
 
-		<title>Home</title>
+		<title>Checkout</title>
 	</head>
 	<body>
 		<!-- First navbar -->
@@ -84,7 +84,7 @@
 
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="/checkout.html"
+									<a href="#"
 										><i class="fas fa-shopping-bag"><span class="badge">2</span></i></a
 									>
 								</li>
@@ -224,65 +224,175 @@
 			<!-- /.container-fluid -->
 		</nav>
 
-		<!-- Carousel -->
+		<!-- Breadcrumbs -->
 
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
+		<div class="container-fluid">
+			<div class="row py-3 bb">
+				<div class="col-md-3 col-md-offset-1 px-0">
+					<ul class="u-list-inline">
+						<li class="list-inline-item mr-5 h-primary"><a href="index.html">Home</a> <i class="fa fa-angle-right ml-5 c-grey-light"></i></li>
+						<li class="list-inline-item mr-5 h-primary"><a href="#">Pages</a> <i class="fa fa-angle-right ml-5 c-grey-light"></i></li>
+						<li class="list-inline-item c-primary">Checkout</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="images/slide1.jpg" alt="first image" />
-					<div class="carousel-overlay">
-						<h1>Summer Collection</h1>
-						<h2>Special Offer: Free</h2>
-						<button type="button" class="btn btn-default transparent-btn">SHOP NOW</button>
-						or
-						<button type="button" class="btn btn-default transparent-btn">CONTACT</button>
+		<!-- Checkout Form -->
+
+		<div class="container-fluid py-10">
+			<div class="row mb-10">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="col-md-4 step-box text-center">
+							<div class="step step-active"><h2>1</h2></div>
+							<h3>SHOPPING CART</h3>
+						</div>
+						<div class="col-md-4 step-box text-center">
+							<div class="step"><h2>2</h2></div>
+							<h3>SHIPPING</h3>
+						</div>
+						<div class="col-md-4 step-box text-center">
+							<div class="step"><h2>3</h2></div>
+							<h3>PAYMENT & REVIEW</h3>
+						</div>
 					</div>
-					<div class="carousel-caption">First Slide</div>
-				</div>
-				<div class="item">
-					<img src="images/slide6.jpg" alt="second image" />
-					<div class="carousel-overlay">
-						<h1>Summer Collection</h1>
-						<h2>Special Offer: Free</h2>
-						<button type="button" class="btn btn-default transparent-btn">SHOP NOW</button>
-						or
-						<button type="button" class="btn btn-default transparent-btn">CONTACT</button>
-					</div>
-					<div class="carousel-caption">Second Slide</div>
-				</div>
-				<div class="item">
-					<img src="images/slide3.jpg" alt="third image" />
-					<div class="carousel-overlay">
-						<h1>Summer Collection</h1>
-						<h2>Special Offer: Free</h2>
-						<button type="button" class="btn btn-default transparent-btn">SHOP NOW</button>
-						or
-						<button type="button" class="btn btn-default transparent-btn">CONTACT</button>
-					</div>
-					<div class="carousel-caption">Third Slide</div>
 				</div>
 			</div>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-1">
+					<!-- Product blog -->
+					<div>
+						<table class="product-table text-center wd-100">
+							<thead class="text-center">
+								<tr>
+									<th class="f-w-400 pb-2">PRODUCT</th>
+									<th class="f-w-400 wd-130 text-center pb-2">PRICE</th>
+									<th class="f-w-400 wd-80 text-center pb-2">QTY</th>
+									<th class="f-w-400 wd-130 text-center pb-2">TOTAL</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-left py-3">
+										<img src="images/cart1.jpg" alt="img here" />
+										<div class="list-inline-item align-middle">
+											<h6>Sneaker</h6>
+											<ul class="list-unstyled">
+												<li>Color:Black</li>
+												<li>Size:MD</li>
+											</ul>
+										</div>
+									</td>
+									<td>$ 87.00</td>
+									<td>
+										<input class="text-center" type="text" value="1" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
+										<i class="c-grey-light fa fa-angle-down"></i>
+									</td>
+									<td class="text-right">
+										<span class="mr-4">$ 87.00</span>
+										<i class="mt-auto fa fa-trash"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left py-3">
+										<img src="images/cart2.jpg" alt="img here" />
+										<div class="list-inline-item align-middle">
+											<h6>Chukka Shoes</h6>
+											<ul class="list-unstyled">
+												<li>Color:Black</li>
+												<li>Size:MD</li>
+											</ul>
+										</div>
+									</td>
+									<td>$ 160.00</td>
+									<td>
+										<input class="text-center" type="text" value="2" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
+										<i class="c-grey-light fa fa-angle-down"></i>
+									</td>
+									<td class="text-right">
+										<span class="mr-4">$ 320.00</span>
+										<i class="mt-auto fa fa-trash"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left py-3">
+										<img src="images/cart3.jpg" alt="img here" />
+										<div class="list-inline-item align-middle">
+											<h6>Desk Clock</h6>
+											<ul class="list-unstyled">
+												<li>Color:Brown Wood</li>
+												<li>Type:Desk</li>
+											</ul>
+										</div>
+									</td>
+									<td>$ 47.00</td>
+									<td>
+										<input class="text-center" type="text" value="1" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
+										<i class="c-grey-light fa fa-angle-down"></i>
+									</td>
+									<td class="text-right">
+										<span class="mr-4">$ 47.00</span>
+										<i class="mt-auto fa fa-trash"></i>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-4 recipt">
+					<div class="summary">
+						<h4 class="bb">SUMMARY</h4>
+						<h5 class="bb">Estimate Shipping <i class="fa fa-angle-down"></i></h5>
+						<table class="wd-100">
+							<tr>
+								<td class="text-left">Subtotal</td>
+								<td class="text-right">$ 454.00</td>
+							</tr>
+							<tr>
+								<td class="text-left">Order Total</td>
+								<td class="text-right">$ 454.00</td>
+							</tr>
+						</table>
+					</div>
+					<button type="button" class="btn btn-default btn-lg btn-block mt-2 mb-2 font-size-13 br-0">UPDATE SHOPPING CART</button>
+					<button type="button" class="btn g-bg-primary c-white btn-lg btn-block mb-2 font-size-13 br-0">PROCEED TO CHECKOUT</button>
+					<a class="" href="#!"> <i class="mr-5 fa fa-info-circle"></i>Delivery </a>
+					<div id="accordion-02" role="tablist" aria-multiselectable="true">
+						<div id="accordion-02-heading-02" role="tab">
+							<h5 class="g-font-weight-400 g-font-size-default mb-0">
+								<a
+									class="g-color-black g-text-underline--none--hover collapsed"
+									href="#accordion-02-body-02"
+									data-toggle="collapse"
+									data-parent="#accordion-02"
+									aria-expanded="false"
+									aria-controls="accordion-02-body-02"
+									>Apply discount code <span class="ml-5 fa fa-angle-down"></span
+								></a>
+							</h5>
+						</div>
+						<div id="accordion-02-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-02-heading-02" style="">
+							<div class="input-group rounded g-pt-15">
+								<input
+									class="form-control g-brd-gray-light-v1 g-brd-right-none g-color-gray-dark-v3 g-placeholder-gray-dark-v3"
+									type="text"
+									placeholder="Enter discount code"
+								/>
+								<span class="input-group-append g-brd-gray-light-v1 g-bg-white">
+									<button class="btn u-btn-primary" type="submit">Apply</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
 		<!-- Features -->
 
 		<div class="container-fluid">
-			<div class="row bb">
+			<div class="row g-bg-primary c-white">
 				<div class="col-md-10 col-md-offset-1 py-3">
 					<div class="row">
 						<div class="col-md-4 p-1">
@@ -291,7 +401,7 @@
 									<i class="fas fa-shipping-fast fa-3x"></i>
 								</div>
 								<div class="col-md-9">
-									<span class="d-block feature-h"> FREE SHIPPING </span>
+									<span class="d-block feature-h c-white"> FREE SHIPPING </span>
 									<span class="d-block featre-d"> In 2-3 Days </span>
 								</div>
 							</div>
@@ -302,7 +412,7 @@
 									<i class="fas fa-exchange-alt fa-3x"></i>
 								</div>
 								<div class="col-md-9">
-									<span class="d-block feature-h"> FREE RETURNS </span>
+									<span class="d-block feature-h c-white"> FREE RETURNS </span>
 									<span class="d-block featre-d"> No Questions Asked </span>
 								</div>
 							</div>
@@ -313,310 +423,9 @@
 									<i class="fas fa-door-open fa-3x"></i>
 								</div>
 								<div class="col-md-9">
-									<span class="d-block feature-h"> FREE 24 </span>
+									<span class="d-block feature-h c-white"> FREE 24 </span>
 									<span class="d-block featre-d"> Days Storage </span>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Categories -->
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 py-3">
-					<div class="row">
-						<div class="col-md-4 p-1">
-							<img src="images/category1.jpg" alt="Category 1" />
-							<div class="cat-overlay">
-								<span>Collections</span>
-								<h2>Women</h2>
-							</div>
-						</div>
-						<div class="col-md-4 p-1">
-							<img src="images/category2.jpg" alt="Category 1" />
-							<div class="cat-overlay">
-								<span>Collections</span>
-								<h2>Kids</h2>
-							</div>
-						</div>
-						<div class="col-md-4 p-1">
-							<img src="images/category3.jpg" alt="Category 1" />
-							<div class="cat-overlay">
-								<span>Collections</span>
-								<h2>Men</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Featured Products -->
-
-		<div class="container-fluid">
-			<div class="feature-discription text-center">
-				<h2>Featured Products</h2>
-				<p class="lead">We want to create a range of beautiful, practical and modern outerwear that doesn't cost the earth – but let's you still live life in style.</p>
-			</div>
-			<div class="row pb-5">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature1.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
-										</div>
-										<h5>Summer shorts</h5>
-										<span class="d-block card-cat">Man</span>
-										<span class="d-block card-price">$52.00</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature2.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
-										</div>
-										<h5>Stylish shirt</h5>
-										<span class="d-block card-cat">Woman</span>
-										<span class="d-block card-price">$99.00</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature3.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
-										</div>
-										<h5>Classic jacket</h5>
-										<span class="d-block card-cat">Man</span>
-										<span class="d-block card-price">$49.99</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature4.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
-										</div>
-										<h5>Wool lined parka</h5>
-										<span class="d-block card-cat">Woman</span>
-										<span class="d-block card-price">$52.00</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Promo Block -->
-
-		<div class="container-fluid">
-			<div class="row promo-block">
-				<div class="col-md-3 col-md-offset-1 promo-block-left">
-					<h2>Leather</h2>
-					<h1>Gloves</h1>
-					<p class="lead-p">We want to create a range of beautiful, practical and modern outerwear that doesn't cost the earth.</p>
-					<button type="button" class="btn btn-success btn-promo">SHOP NOW</button>
-				</div>
-				<div class="col-md-5 col-md-offset-2">
-					<div class="promo-price">
-						<h2>$60.<span class="cent-size">00</span></h2>
-					</div>
-					<img src="images/gloves.png" alt="Gloves" />
-				</div>
-			</div>
-		</div>
-
-		<!-- NEW ARRIVALS -->
-
-		<div class="container-fluid">
-			<div class="feature-discription text-center">
-				<h2>New Arrivals</h2>
-				<p class="lead">We want to create a range of beautiful, practical and modern outerwear that doesn't cost the earth – but let's you still live life in style.</p>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 py-3">
-					<div class="row">
-						<div class="col-md-4 p-1">
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 p-1">
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 p-1">
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-							<div class="article">
-								<img src="images/article1.jpg" alt="Image here" />
-								<div class="article-right">
-									<h5>Glasses</h5>
-									<span class="d-block card-cat">Accessories</span>
-									<span class="d-block card-price">$22.00</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="feature-discription text-center">
-				<button type="button" class="btn btn-success btn-promo">ALL NEW ARRIVALS</button>
-			</div>
-		</div>
-
-		<!-- Categories 2 -->
-
-		<div class="container-fluid">
-			<div class="row h-5 mt-6">
-				<div class="col-md-8 px-0 left-flex h-5">
-					<img src="images/flex1.jpg" alt="Image here" />
-					<div class="flex-1">
-						<h2>Summer <br />Collection</h2>
-						<p>Shop Now</p>
-					</div>
-				</div>
-				<div class="col-md-4 px-0 left-flex bg-grey h-5">
-					<img src="images/flex2.png" alt="Sneakers" />
-					<div class="flex-2">
-						<h3>Sneaker Shoes for Man</h3>
-						<p>$45.00</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Blog News -->
-
-		<div class="container-fluid">
-			<div class="feature-discription text-center mt-6">
-				<h2>Blog News</h2>
-				<p class="lead">Keep in touch with the latest blogs & news.</p>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 mb-10">
-					<div class="row">
-						<div class="col-md-4 overlay">
-							<img src="images/blog1.jpg" alt="Image here" />
-							<div class="opa-3"></div>
-							<div class="blog-overlay">
-								<span class="d-block blog-cat">sport</span>
-								<h2 class="mt-1">24 Hours in Shopping</h2>
-								<h4>
-									By,<a href="#"> DAN SHAW</a>
-									<span>.</span>
-									<span class="blog-date"> MAY 31,2017</span>
-								</h4>
-							</div>
-						</div>
-						<div class="col-md-4 overlay">
-							<img src="images/blog2.jpg" alt="Image here" />
-							<div class="opa-3"></div>
-							<div class="blog-overlay">
-								<span class="d-block blog-cat">design</span>
-								<h2 class="mt-1">How to Design with Colors</h2>
-								<h4>
-									By,<a href="#"> DAN SHAW</a>
-									<span>.</span>
-									<span class="blog-date"> MAY 31,2017</span>
-								</h4>
-							</div>
-						</div>
-						<div class="col-md-4 overlay">
-							<img src="images/blog3.jpg" alt="Image here" />
-							<div class="opa-3"></div>
-							<div class="blog-overlay">
-								<span class="d-block blog-cat">photography</span>
-								<h2 class="mt-1">Stunning Woman's Capture</h2>
-								<h4>
-									By,<a href="#"> DAN SHAW</a>
-									<span>.</span>
-									<span class="blog-date"> MAY 31,2017</span>
-								</h4>
 							</div>
 						</div>
 					</div>
