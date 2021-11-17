@@ -111,11 +111,13 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="row">
 						<div class="col-md-4 step-box text-center">
-							<div class="step step-active"><h2>1</h2></div>
+							<div class="step step-active">
+								<h2><i class="fas fa-check fa-lg bg-check"></i></h2>
+							</div>
 							<h3>SHOPPING CART</h3>
 						</div>
 						<div class="col-md-4 step-box text-center">
-							<div class="step"><h2>2</h2></div>
+							<div class="step step-active"><h2>2</h2></div>
 							<h3>SHIPPING</h3>
 						</div>
 						<div class="col-md-4 step-box text-center">
@@ -129,88 +131,244 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1">
 					<!-- Product blog -->
-					<div>
-						<table class="product-table text-center wd-100">
-							<thead class="text-center">
-								<tr>
-									<th class="f-w-400 pb-2">PRODUCT</th>
-									<th class="f-w-400 wd-130 text-center pb-2">PRICE</th>
-									<th class="f-w-400 wd-80 text-center pb-2">QTY</th>
-									<th class="f-w-400 wd-130 text-center pb-2">TOTAL</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="text-left py-3">
-										<img src="images/cart1.jpg" alt="img here" />
-										<div class="list-inline-item align-middle">
-											<h6>Sneaker</h6>
-											<ul class="list-unstyled">
-												<li>Color:Black</li>
-												<li>Size:MD</li>
-											</ul>
-										</div>
-									</td>
-									<td>$ 87.00</td>
-									<td>
-										<input class="text-center" type="text" value="1" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
-										<i class="c-grey-light fa fa-angle-down"></i>
-									</td>
-									<td class="text-right">
-										<span class="mr-4">$ 87.00</span>
-										<i class="mt-auto fa fa-trash"></i>
-									</td>
-								</tr>
-								<tr>
-									<td class="text-left py-3">
-										<img src="images/cart2.jpg" alt="img here" />
-										<div class="list-inline-item align-middle">
-											<h6>Chukka Shoes</h6>
-											<ul class="list-unstyled">
-												<li>Color:Black</li>
-												<li>Size:MD</li>
-											</ul>
-										</div>
-									</td>
-									<td>$ 160.00</td>
-									<td>
-										<input class="text-center" type="text" value="2" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
-										<i class="c-grey-light fa fa-angle-down"></i>
-									</td>
-									<td class="text-right">
-										<span class="mr-4">$ 320.00</span>
-										<i class="mt-auto fa fa-trash"></i>
-									</td>
-								</tr>
-								<tr>
-									<td class="text-left py-3">
-										<img src="images/cart3.jpg" alt="img here" />
-										<div class="list-inline-item align-middle">
-											<h6>Desk Clock</h6>
-											<ul class="list-unstyled">
-												<li>Color:Brown Wood</li>
-												<li>Type:Desk</li>
-											</ul>
-										</div>
-									</td>
-									<td>$ 47.00</td>
-									<td>
-										<input class="text-center" type="text" value="1" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
-										<i class="c-grey-light fa fa-angle-down"></i>
-									</td>
-									<td class="text-right">
-										<span class="mr-4">$ 47.00</span>
-										<i class="mt-auto fa fa-trash"></i>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="row">
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">First Name</label>
+								<input
+									id="inputGroup4"
+									class="form-control u-form-control br-0 g-py-15"
+									name="firstName"
+									type="text"
+									placeholder="Alexander"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
+
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">Last Name</label>
+								<input
+									id="inputGroup5"
+									class="form-control u-form-control rounded-0 g-py-15"
+									name="lastName"
+									type="text"
+									placeholder="Teseira"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
 					</div>
+					<div class="row">
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">Email Address</label>
+								<input
+									id="inputGroup6"
+									class="form-control u-form-control rounded-0 g-py-15"
+									name="email"
+									type="email"
+									placeholder="alex@gmail.com"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
+
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">Company</label>
+								<input id="inputGroup7" class="form-control u-form-control rounded-0 g-py-15" name="company" type="text" placeholder="Pixeel Ltd." />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">State/Province</label>
+								<input
+									id="inputGroup8"
+									class="form-control u-form-control rounded-0 g-py-15"
+									name="stateProvince"
+									type="text"
+									placeholder="London"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
+
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">Zip/Postal Code</label>
+								<input
+									id="inputGroup9"
+									class="form-control u-form-control rounded-0 g-py-15"
+									name="zip"
+									type="text"
+									placeholder="AB123"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">Country</label>
+								<input
+									id="inputGroup10"
+									class="form-control u-form-control rounded-0 g-py-15"
+									name="phoneNumber"
+									type="text"
+									placeholder="Write your Country"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
+
+						<div class="col-sm-6 g-mb-20">
+							<div class="form-group">
+								<label class="d-block g-color-gray-dark-v2 g-font-size-13">Phone Number</label>
+								<input
+									id="inputGroup10"
+									class="form-control u-form-control rounded-0 g-py-15"
+									name="phoneNumber"
+									type="text"
+									placeholder="+01 (00) 555 666 77"
+									required=""
+									data-msg="This field is mandatory"
+									data-error-class="u-has-error-v1"
+									data-success-class="u-has-success-v1"
+									aria-required="true"
+								/>
+							</div>
+						</div>
+					</div>
+					<hr class="mb-5" />
+					<h6 class="h6 mb-5">SHIPPING METHOD</h6>
+
+					<table class="mb-5">
+						<thead class="h6 g-brd-bottom g-brd-gray-light-v3 g-color-gray-dark-v3 g-font-size-13">
+							<tr>
+								<th class="wd-80 g-font-weight-500 g-pb-10">Destination</th>
+								<th class="g-width-110 g-font-weight-500 g-pb-10">Delivery type</th>
+								<th class="g-width-150 g-font-weight-500 g-pb-10">Delivery time</th>
+								<th class="g-width-70 g-font-weight-500 text-right g-pb-10">Cost</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="g-color-gray-dark-v4 g-font-size-13">
+								<td class="align-top g-py-10">UK</td>
+								<td class="align-top g-py-10">Standard delivery</td>
+								<td class="align-top g-py-10">2-3 Working days</td>
+								<td class="align-top text-right g-py-10">$5.5</td>
+							</tr>
+							<tr class="g-color-gray-dark-v4 g-font-size-13">
+								<td class="align-top g-py-10"></td>
+								<td class="align-top g-py-10">Next day</td>
+								<td class="align-top g-py-10">Order before 12pm monday - thursday and receive it the next day</td>
+								<td class="align-top text-right g-py-10">$9.5</td>
+							</tr>
+							<tr class="g-color-gray-dark-v4 g-font-size-13">
+								<td class="align-top g-py-10"></td>
+								<td class="align-top g-py-10">Saturday delivery</td>
+								<td class="align-top g-py-10">Saturday delivery for orders placed before 12pm on friday</td>
+								<td class="align-top text-right g-py-10">$12.00</td>
+							</tr>
+							<tr class="g-color-gray-dark-v4 g-font-size-13">
+								<td class="align-top g-py-10">Europe</td>
+								<td class="align-top g-py-10">Standard delivery</td>
+								<td class="align-top g-py-10">3-9 Working days</td>
+								<td class="align-top text-right g-py-10">$20.00</td>
+							</tr>
+							<tr class="g-color-gray-dark-v4 g-font-size-13">
+								<td class="align-top g-py-10">America</td>
+								<td class="align-top g-py-10">Standard delivery</td>
+								<td class="align-top g-py-10">3-9 Working days</td>
+								<td class="align-top text-right g-py-10">$25.00</td>
+							</tr>
+						</tbody>
+					</table>
+					<a href="checkout3.html">
+						<button class="btn u-btn-primary g-font-size-13 text-uppercase c-white" type="button" data-next-step="#step3">Proceed to Payment</button>
+					</a>
 				</div>
 				<div class="col-md-4 recipt">
 					<div class="summary">
-						<h4 class="bb">SUMMARY</h4>
-						<h5 class="bb">Estimate Shipping <i class="fa fa-angle-down"></i></h5>
+						<h4 class="bb">ORDER SUMMARY</h4>
+						<h5 class="bb">3 items in cart <i onclick="listCart()" class="fa fa-angle-down ml-5"></i></h5>
+						<div id="cartItems" class="py-5">
+							<ul class="list-unstyled mb-3">
+								<!-- Product -->
+								<li class="d-flex justify-content-start">
+									<img class="g-width-100 g-height-100 mr-3" src="images/cart1.jpg" alt="Image Description" />
+									<div class="d-block">
+										<h4 class="h6 g-color-black">Sneaker</h4>
+										<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_4 mb-1">
+											<li>Color: Black</li>
+											<li>Size: MD</li>
+											<li>QTY: 1</li>
+										</ul>
+										<span class="d-block g-color-black g-font-weight-400">$ 87.00</span>
+									</div>
+								</li>
+								<!-- End Product -->
+
+								<!-- Product -->
+								<li class="d-flex justify-content-start g-brd-top g-brd-gray-light-v3 pt-4 mt-4 bt">
+									<img class="g-width-100 g-height-100 mr-3" src="images/cart2.jpg" alt="Image Description" />
+									<div class="d-block">
+										<h4 class="h6 g-color-black">Chukka Shoes</h4>
+										<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_4 mb-1">
+											<li>Color: Black</li>
+											<li>Size: MD</li>
+											<li>QTY: 2</li>
+										</ul>
+										<span class="d-block g-color-black g-font-weight-400">$ 160.00</span>
+									</div>
+								</li>
+								<!-- End Product -->
+
+								<!-- Product -->
+								<li class="d-flex justify-content-start g-brd-top g-brd-gray-light-v3 pt-4 mt-4 bt">
+									<img class="g-width-100 g-height-100 mr-3" src="images/cart3.jpg" alt="Image Description" />
+									<div class="d-block">
+										<h4 class="h6 g-color-black">Desk Clock</h4>
+										<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_4 mb-1">
+											<li>Color: Brown Wood</li>
+											<li>Type: Desk</li>
+											<li>QTY: 1</li>
+										</ul>
+										<span class="d-block g-color-black g-font-weight-400">$ 47.00</span>
+									</div>
+								</li>
+								<!-- End Product -->
+							</ul>
+						</div>
 						<table class="wd-100">
 							<tr>
 								<td class="text-left">Subtotal</td>
@@ -221,38 +379,6 @@
 								<td class="text-right">$ 454.00</td>
 							</tr>
 						</table>
-					</div>
-					<button type="button" class="btn btn-default btn-lg btn-block mt-2 mb-2 font-size-13 br-0">UPDATE SHOPPING CART</button>
-					<a href="checkout2.html">
-						<button type="button" class="btn g-bg-primary c-white btn-lg btn-block mb-2 font-size-13 br-0">PROCEED TO CHECKOUT</button>
-					</a>
-					<a class="" href="#!"> <i class="mr-5 fa fa-info-circle"></i>Delivery </a>
-					<div id="accordion-02" role="tablist" aria-multiselectable="true">
-						<div id="accordion-02-heading-02" role="tab">
-							<h5 class="g-font-weight-400 g-font-size-default mb-2">
-								<a
-									class="g-color-black g-text-underline--none--hover collapsed"
-									href="#accordion-02-body-02"
-									data-toggle="collapse"
-									data-parent="#accordion-02"
-									aria-expanded="false"
-									aria-controls="accordion-02-body-02"
-									>Apply discount code <span class="ml-5 fa fa-angle-down"></span
-								></a>
-							</h5>
-						</div>
-						<div id="accordion-02-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-02-heading-02" style="">
-							<div class="input-group wd-60">
-								<input
-									type="text"
-									class="form-control apply"
-									placeholder="Enter discount code"
-									id="inputGroupSuccess2"
-									aria-describedby="inputGroupSuccess2Status"
-								/>
-								<span class="input-group-addon bg-btn-primary c-white"> <button class="btn bg-btn-primary" type="submit">Apply</button> </span>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

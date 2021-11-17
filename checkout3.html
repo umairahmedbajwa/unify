@@ -111,15 +111,19 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="row">
 						<div class="col-md-4 step-box text-center">
-							<div class="step step-active"><h2>1</h2></div>
+							<div class="step step-active">
+								<h2><i class="fas fa-check fa-lg bg-check"></i></h2>
+							</div>
 							<h3>SHOPPING CART</h3>
 						</div>
 						<div class="col-md-4 step-box text-center">
-							<div class="step"><h2>2</h2></div>
+							<div class="step step-active">
+								<h2><i class="fas fa-check fa-lg bg-check"></i></h2>
+							</div>
 							<h3>SHIPPING</h3>
 						</div>
 						<div class="col-md-4 step-box text-center">
-							<div class="step"><h2>3</h2></div>
+							<div class="step step-active"><h2>3</h2></div>
 							<h3>PAYMENT & REVIEW</h3>
 						</div>
 					</div>
@@ -129,109 +133,34 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1">
 					<!-- Product blog -->
-					<div>
-						<table class="product-table text-center wd-100">
-							<thead class="text-center">
-								<tr>
-									<th class="f-w-400 pb-2">PRODUCT</th>
-									<th class="f-w-400 wd-130 text-center pb-2">PRICE</th>
-									<th class="f-w-400 wd-80 text-center pb-2">QTY</th>
-									<th class="f-w-400 wd-130 text-center pb-2">TOTAL</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="text-left py-3">
-										<img src="images/cart1.jpg" alt="img here" />
-										<div class="list-inline-item align-middle">
-											<h6>Sneaker</h6>
-											<ul class="list-unstyled">
-												<li>Color:Black</li>
-												<li>Size:MD</li>
-											</ul>
-										</div>
-									</td>
-									<td>$ 87.00</td>
-									<td>
-										<input class="text-center" type="text" value="1" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
-										<i class="c-grey-light fa fa-angle-down"></i>
-									</td>
-									<td class="text-right">
-										<span class="mr-4">$ 87.00</span>
-										<i class="mt-auto fa fa-trash"></i>
-									</td>
-								</tr>
-								<tr>
-									<td class="text-left py-3">
-										<img src="images/cart2.jpg" alt="img here" />
-										<div class="list-inline-item align-middle">
-											<h6>Chukka Shoes</h6>
-											<ul class="list-unstyled">
-												<li>Color:Black</li>
-												<li>Size:MD</li>
-											</ul>
-										</div>
-									</td>
-									<td>$ 160.00</td>
-									<td>
-										<input class="text-center" type="text" value="2" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
-										<i class="c-grey-light fa fa-angle-down"></i>
-									</td>
-									<td class="text-right">
-										<span class="mr-4">$ 320.00</span>
-										<i class="mt-auto fa fa-trash"></i>
-									</td>
-								</tr>
-								<tr>
-									<td class="text-left py-3">
-										<img src="images/cart3.jpg" alt="img here" />
-										<div class="list-inline-item align-middle">
-											<h6>Desk Clock</h6>
-											<ul class="list-unstyled">
-												<li>Color:Brown Wood</li>
-												<li>Type:Desk</li>
-											</ul>
-										</div>
-									</td>
-									<td>$ 47.00</td>
-									<td>
-										<input class="text-center" type="text" value="1" readonly="" /> <i class="c-grey-light fa fa-angle-up"></i>
-										<i class="c-grey-light fa fa-angle-down"></i>
-									</td>
-									<td class="text-right">
-										<span class="mr-4">$ 47.00</span>
-										<i class="mt-auto fa fa-trash"></i>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="mb-3">
+						<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+						Pay with
+						<img class="g-width-70 ml-5" src="images/paypal.jpg" alt="Image Description" />
+						<hr />
+						<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+						Pay with Credit Card
+						<img class="g-width-50 ml-5" src="images/visa.jpg" alt="Image Description" />
 					</div>
-				</div>
-				<div class="col-md-4 recipt">
-					<div class="summary">
-						<h4 class="bb">SUMMARY</h4>
-						<h5 class="bb">Estimate Shipping <i class="fa fa-angle-down"></i></h5>
-						<table class="wd-100">
-							<tr>
-								<td class="text-left">Subtotal</td>
-								<td class="text-right">$ 454.00</td>
-							</tr>
-							<tr>
-								<td class="text-left">Order Total</td>
-								<td class="text-right">$ 454.00</td>
-							</tr>
-						</table>
+					<div class="ba mb-3"><i class="fas fa-check br p-1"></i>&nbsp; My billing and shipping adress are correct</div>
+
+					<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-15 g-pl-70 mb-5">
+						<li class="g-my-3">Chester Ryan</li>
+						<li class="g-my-3">chester@gmail.com</li>
+						<li class="g-my-3">51 Hailee Park</li>
+						<li class="g-my-3">New York, NY, 10013</li>
+						<li class="g-my-3">AB123</li>
+						<li class="g-my-3">United States</li>
+						<li class="g-my-3">+01 731 878 77</li>
+					</ul>
+					<div class="text-right mb-3 bb pb-3">
+						<button class="btn u-btn-primary g-font-size-13 text-uppercase c-white" type="button" data-next-step="#step3">Make Payment</button>
 					</div>
-					<button type="button" class="btn btn-default btn-lg btn-block mt-2 mb-2 font-size-13 br-0">UPDATE SHOPPING CART</button>
-					<a href="checkout2.html">
-						<button type="button" class="btn g-bg-primary c-white btn-lg btn-block mb-2 font-size-13 br-0">PROCEED TO CHECKOUT</button>
-					</a>
-					<a class="" href="#!"> <i class="mr-5 fa fa-info-circle"></i>Delivery </a>
 					<div id="accordion-02" role="tablist" aria-multiselectable="true">
 						<div id="accordion-02-heading-02" role="tab">
-							<h5 class="g-font-weight-400 g-font-size-default mb-2">
+							<h5 class="h6 mb-2">
 								<a
-									class="g-color-black g-text-underline--none--hover collapsed"
+									class="c-dark text-underline-none collapsed text-uppercase"
 									href="#accordion-02-body-02"
 									data-toggle="collapse"
 									data-parent="#accordion-02"
@@ -250,9 +179,110 @@
 									id="inputGroupSuccess2"
 									aria-describedby="inputGroupSuccess2Status"
 								/>
-								<span class="input-group-addon bg-btn-primary c-white"> <button class="btn bg-btn-primary" type="submit">Apply</button> </span>
+								<span class="input-group-addon bg-btn-primary"> <button class="btn bg-btn-primary c-white" type="submit">Apply</button> </span>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-4 recipt">
+					<div class="summary mb-2">
+						<h4 class="bb">ORDER SUMMARY</h4>
+
+						<table class="wd-100 order-summary bb">
+							<tr>
+								<td class="text-left">Cart Subtotal</td>
+								<td class="text-right">$ 454.00</td>
+							</tr>
+							<tr>
+								<td class="text-left">Shipping</td>
+								<td class="text-right">$ 5.5</td>
+							</tr>
+							<tr>
+								<td class="text-left c-grey-v2 pt-0 font-size-12">UK Standard Delivery 2-3 Working Days</td>
+							</tr>
+							<tr>
+								<td class="text-left">Order Total</td>
+								<td class="text-right">$ 459.5</td>
+							</tr>
+						</table>
+
+						<h5 class="bb">3 items in cart <i onclick="listCart()" class="fa fa-angle-down ml-5"></i></h5>
+						<div id="cartItems" class="py-5">
+							<ul class="list-unstyled mb-3">
+								<!-- Product -->
+								<li class="d-flex justify-content-start">
+									<img class="g-width-100 g-height-100 mr-3" src="images/cart1.jpg" alt="Image Description" />
+									<div class="d-block">
+										<h4 class="h6 g-color-black">Sneaker</h4>
+										<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_4 mb-1">
+											<li>Color: Black</li>
+											<li>Size: MD</li>
+											<li>QTY: 1</li>
+										</ul>
+										<span class="d-block g-color-black g-font-weight-400">$ 87.00</span>
+									</div>
+								</li>
+								<!-- End Product -->
+
+								<!-- Product -->
+								<li class="d-flex justify-content-start g-brd-top g-brd-gray-light-v3 pt-4 mt-4 bt">
+									<img class="g-width-100 g-height-100 mr-3" src="images/cart2.jpg" alt="Image Description" />
+									<div class="d-block">
+										<h4 class="h6 g-color-black">Chukka Shoes</h4>
+										<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_4 mb-1">
+											<li>Color: Black</li>
+											<li>Size: MD</li>
+											<li>QTY: 2</li>
+										</ul>
+										<span class="d-block g-color-black g-font-weight-400">$ 160.00</span>
+									</div>
+								</li>
+								<!-- End Product -->
+
+								<!-- Product -->
+								<li class="d-flex justify-content-start g-brd-top g-brd-gray-light-v3 pt-4 mt-4 bt">
+									<img class="g-width-100 g-height-100 mr-3" src="images/cart3.jpg" alt="Image Description" />
+									<div class="d-block">
+										<h4 class="h6 g-color-black">Desk Clock</h4>
+										<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_4 mb-1">
+											<li>Color: Brown Wood</li>
+											<li>Type: Desk</li>
+											<li>QTY: 1</li>
+										</ul>
+										<span class="d-block g-color-black g-font-weight-400">$ 47.00</span>
+									</div>
+								</li>
+								<!-- End Product -->
+							</ul>
+						</div>
+					</div>
+					<!-- Ship to -->
+					<div class="px-2 mb-5">
+						<div class="d-flex justify-content-between g-brd-bottom g-brd-gray-light-v3 g-mb-20">
+							<h4 class="h6 text-uppercase mb-3">Ship to</h4>
+							<span class="g-color-gray-dark-v4 g-color-black--hover g-cursor-pointer">
+								<i class="fas fa-pencil-alt"></i>
+							</span>
+						</div>
+						<ul class="list-unstyled g-color-gray-dark-v4 g-font-size-15">
+							<li class="g-my-3">Chester Ryan</li>
+							<li class="g-my-3">chester@gmail.com</li>
+							<li class="g-my-3">51 Hailee Park</li>
+							<li class="g-my-3">New York, NY, 10013</li>
+							<li class="g-my-3">AB123</li>
+							<li class="g-my-3">United States</li>
+							<li class="g-my-3">+01 731 878 77</li>
+						</ul>
+					</div>
+					<!-- Shipping Method -->
+					<div class="px-2 mb-5">
+						<div class="d-flex justify-content-between g-brd-bottom g-brd-gray-light-v3 g-mb-20">
+							<h4 class="h6 text-uppercase mb-3">Shipping Method</h4>
+							<span class="g-color-gray-dark-v4 g-color-black--hover g-cursor-pointer">
+								<i class="fas fa-pencil-alt"></i>
+							</span>
+						</div>
+						<p class="g-color-gray-dark-v4 g-font-size-15">UK Standard Delivery - 2-3 Working Days</p>
 					</div>
 				</div>
 			</div>
