@@ -78,7 +78,10 @@ body {
 	padding-right: 5px !important;
 }
 .pb-0 {
-	padding-bottom: 0;
+	padding-bottom: 0 !important;
+}
+.pb-1 {
+	padding-bottom: 10px !important;
 }
 
 .pb-2 {
@@ -216,7 +219,7 @@ body {
 }
 
 .h-5 {
-	min-height: 600px !important;
+	min-height: 607px !important;
 	/* max-height: 500px !important; */
 }
 .h6 {
@@ -298,6 +301,9 @@ body {
 .align-middle {
 	vertical-align: middle !important;
 }
+.align-left {
+	text-align: left !important;
+}
 
 .justify-content-between {
 	justify-content: space-between !important;
@@ -329,32 +335,52 @@ body {
 	top: 0 !important;
 }
 
-.content {
+/* .content {
 	padding: 16px;
-}
+} */
 
 .sticky {
+	background-color: rgb(255, 255, 255) !important;
+	min-height: 70px !important;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 99;
-	transition: all 0.5s ease-in-out !important;
-	transition-delay: 0.5s !important;
+	/* transition: all 0.5s ease-in-out !important;
+	transition-delay: 0.5s !important; */
 	/* left: 0 !important; */
 	/* right: 0 !important; */
-	width: 100%;
-	background-color: rgb(255, 255, 255) !important;
+	/* width: 100%; */
 }
 
-.sticky + .content {
+/* .sticky + .content {
 	padding-top: 60px;
-}
+} */
 /* Animated navbar3 */
 .wrapper-nav {
+	height: 139px;
 	position: absoulte;
-	top: 0;
 	right: 0;
-	height: 142px;
+	top: 0;
+	/* transition: top 2.3s; */
+}
+nav {
+	animation-duration: 3.5s;
+	animation-delay: 1.7s;
+	animation-name: example;
+	animation-direction: reverse;
+	position: absoulte;
+}
+@keyframes example {
+	0% {
+		top: -139px;
+	}
+	50% {
+		top: -50px;
+	}
+	100% {
+		top: 0;
+	}
 }
 .align-center {
 	margin-right: auto !important;
@@ -364,7 +390,7 @@ body {
 .flex-container {
 	display: flex;
 	align-items: center;
-	overflow: hidden !important;
+	/* overflow: hidden !important; */
 }
 
 .justify-content-center {
@@ -372,7 +398,7 @@ body {
 }
 
 .fixed .navbar {
-	display: none;
+	/* display: none; */
 	background-color: var(--white) !important;
 	position: fixed;
 	padding-left: 15px;
@@ -418,9 +444,13 @@ body {
 	max-width: 100vw;
 	margin: 0 auto;
 	padding: 0 15px;
+	padding: 0 !important;
+	border-radius: none;
+	margin-bottom: 0;
+	border: none;
 	/* animation: animatee 2s ease-in-out 5s 1; */
-	transition: all 0.5s ease-in-out !important;
-	transition-delay: 0.5s !important;
+	/* transition: all 0.5s ease-in-out !important;
+	transition-delay: 0.5s !important; */
 }
 
 .fixed .navbar .animation-left,
@@ -458,7 +488,6 @@ body {
 .navbar + .navbar {
 	padding: 0 !important;
 	border-radius: none;
-	height: 30px;
 	margin-bottom: 0;
 	border: none;
 }
@@ -1244,4 +1273,109 @@ table.product-table td i:hover {
 .order-summary tr td {
 	padding-top: 6px;
 	padding-bottom: 6px;
+}
+
+a.hover-dark:hover {
+	color: black !important;
+}
+
+/* custom checkbox/radio  */
+.containerCheck {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerCheck input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: #fff;
+	border: 1px solid #999;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheck:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerCheck input:checked ~ .checkmark {
+	background-color: #fff;
+	border-color: #3bb18f !important;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerCheck input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerCheck .checkmark:after {
+	left: 5px;
+	top: 2px;
+	width: 6px;
+	height: 10px;
+	border: solid #3bb18f;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* Media queries */
+@media only screen and (max-width: 380px) {
+	#scrollNav ul {
+		display: none;
+	}
+	.bl {
+		border: none;
+	}
+	.wd-60,
+	.wd-90 {
+		width: 100% !important;
+	}
+	.wd-130 {
+		width: 80px !important;
+	}
+	.mobile-center,
+	.col-md-1,
+	.col-md-9,
+	.col-md-2 {
+		text-align: center;
+	}
+	.mobile-right {
+		text-align: right;
+	}
+	.h-5 {
+		min-height: 400px !important;
+	}
+	.mr-4 {
+		margin-right: 0 !important;
+	}
 }

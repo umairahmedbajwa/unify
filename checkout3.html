@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<nav class="wrapper-nav">
-			<div class="container-fluid px-0">
+			<div id="scrollNav" class="container-fluid px-0">
 				<!-- First navbar -->
 				<div id="header" class="flex-container justify-content-center navbar mb-0 px-2">
 					<div class="config flex-item-left clearfix">
@@ -94,7 +94,7 @@
 
 		<div class="container-fluid">
 			<div class="row py-3 bb">
-				<div class="col-md-3 col-md-offset-1 px-0">
+				<div class="col-md-3 col-md-offset-1">
 					<ul class="u-list-inline">
 						<li class="list-inline-item mr-5 h-primary"><a href="index.html">Home</a> <i class="fa fa-angle-right ml-5 c-grey-light"></i></li>
 						<li class="list-inline-item mr-5 h-primary"><a href="#">Pages</a> <i class="fa fa-angle-right ml-5 c-grey-light"></i></li>
@@ -133,14 +133,30 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-1">
 					<!-- Product blog -->
+
 					<div class="mb-3">
-						<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+						<!-- custom radio designed as checkbox -->
+						<label class="containerCheck"
+							>Pay with
+							<img class="g-width-70 ml-5" src="images/paypal.jpg" alt="Image Description" />
+							<input type="radio" checked="checked" name="radio" />
+							<span class="checkmark"></span>
+						</label>
+						<hr />
+						<label class="containerCheck"
+							>Pay with Credit Card
+							<img class="g-width-50 ml-5" src="images/visa.jpg" alt="Image Description" />
+							<input type="radio" name="radio" />
+							<span class="checkmark"></span>
+						</label>
+						<!-- Default checkbox -->
+						<!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
 						Pay with
 						<img class="g-width-70 ml-5" src="images/paypal.jpg" alt="Image Description" />
 						<hr />
 						<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
 						Pay with Credit Card
-						<img class="g-width-50 ml-5" src="images/visa.jpg" alt="Image Description" />
+						<img class="g-width-50 ml-5" src="images/visa.jpg" alt="Image Description" /> -->
 					</div>
 					<div class="ba mb-3"><i class="fas fa-check br p-1"></i>&nbsp; My billing and shipping adress are correct</div>
 
@@ -170,7 +186,7 @@
 								></a>
 							</h5>
 						</div>
-						<div id="accordion-02-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-02-heading-02" style="">
+						<div id="accordion-02-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-02-heading-02">
 							<div class="input-group wd-60">
 								<input
 									type="text"
@@ -439,7 +455,7 @@
 				</div>
 				<div class="col-md-3 col-md-offset-2">
 					<!-- flags -->
-					<div class="flags">
+					<div class="flags mobile-right">
 						<!-- <img src="images/visa.png" alt="Visa card" /> -->
 						<!-- <img src="images/paypal.png" alt="Visa card" /> -->
 						<!-- <img src="images/master.png" alt="Visa card" /> -->
