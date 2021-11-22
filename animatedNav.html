@@ -25,6 +25,10 @@
 			integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
 			crossorigin="anonymous"
 		/>
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="shortcut icon" href="images/logo1.png" />
 
@@ -109,34 +113,47 @@
 					<img src="images/slide1.jpg" alt="first image" />
 					<div class="carousel-overlay">
 						<h1>Summer Collection</h1>
-						<h2>Special Offer: Free</h2>
+						<!-- <h2>Special Offer: Free</h2> -->
+						<h2><span class="txt-rotate" data-period="500" data-rotate='[ "Made to Captivate your Audience.", "Stylish Collection for the Best." ]'></span></h2>
 						<button type="button" class="btn btn-default transparent-btn">SHOP NOW</button>
 						or
 						<button type="button" class="btn btn-default transparent-btn">CONTACT</button>
 					</div>
-					<div class="carousel-caption">First Slide</div>
+					<!-- <div class="carousel-caption">First Slide</div> -->
 				</div>
 				<div class="item">
 					<img src="images/slide6.jpg" alt="second image" />
 					<div class="carousel-overlay">
 						<h1>Summer Collection</h1>
-						<h2>Special Offer: Free</h2>
+						<!-- <h2>Special Offer: Free</h2> -->
+						<h2>
+							<span
+								class="txt-rotate"
+								data-period="500"
+								data-rotate='[ "Get 20% off any purchase off over 100$.", "Special Offer: Free Shipping Today.","Shop with Unify." ]'
+							></span>
+						</h2>
+
 						<button type="button" class="btn btn-default transparent-btn">SHOP NOW</button>
 						or
 						<button type="button" class="btn btn-default transparent-btn">CONTACT</button>
 					</div>
-					<div class="carousel-caption">Second Slide</div>
+					<!-- <div class="carousel-caption">Second Slide</div> -->
 				</div>
 				<div class="item">
 					<img src="images/slide3.jpg" alt="third image" />
 					<div class="carousel-overlay">
 						<h1>Summer Collection</h1>
-						<h2>Special Offer: Free</h2>
+						<!-- <h2>Special Offer: Free</h2> -->
+						<h2>
+							<span class="txt-rotate" data-period="500" data-rotate='[ "Find your Perfect Clothes.", "Stylish Collection for the Best.","Shop with Unify." ]'></span>
+						</h2>
+
 						<button type="button" class="btn btn-default transparent-btn">SHOP NOW</button>
 						or
 						<button type="button" class="btn btn-default transparent-btn">CONTACT</button>
 					</div>
-					<div class="carousel-caption">Third Slide</div>
+					<!-- <div class="carousel-caption">Third Slide</div> -->
 				</div>
 			</div>
 
@@ -201,24 +218,30 @@
 				<div class="col-md-10 col-md-offset-1 py-3">
 					<div class="row">
 						<div class="col-md-4 p-1">
-							<img src="images/category1.jpg" alt="Category 1" />
-							<div class="cat-overlay">
-								<span>Collections</span>
-								<h2>Women</h2>
+							<div class="img-hover-zoom--quick-zoom">
+								<img src="images/category1.jpg" alt="Category 1" />
+								<div class="cat-overlay">
+									<span>Collections</span>
+									<h2>Women</h2>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 p-1">
-							<img src="images/category2.jpg" alt="Category 1" />
-							<div class="cat-overlay">
-								<span>Collections</span>
-								<h2>Kids</h2>
+							<div class="img-hover-zoom--quick-zoom">
+								<img src="images/category2.jpg" alt="Category 1" />
+								<div class="cat-overlay">
+									<span>Collections</span>
+									<h2>Kids</h2>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 p-1">
-							<img src="images/category3.jpg" alt="Category 1" />
-							<div class="cat-overlay">
-								<span>Collections</span>
-								<h2>Men</h2>
+							<div class="img-hover-zoom--quick-zoom">
+								<img src="images/category3.jpg" alt="Category 1" />
+								<div class="cat-overlay">
+									<span>Collections</span>
+									<h2>Men</h2>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -236,66 +259,100 @@
 			<div class="row pb-5">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="row">
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature1.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
+						<div class="cardSlider py-2">
+							<div class="col-md-3">
+								<div class="feature-card">
+									<img src="images/feature1.jpg" alt="Featured product" />
+									<div class="card-info">
+										<div class="card-details">
+											<div class="cart-fav">
+												<span><i class="fas fa-shopping-cart"></i></span>
+												<span><i class="far fa-heart"></i></span>
+											</div>
+											<h5>Summer shorts</h5>
+											<span class="d-block card-cat">Man</span>
+											<span class="d-block card-price">$52.00</span>
 										</div>
-										<h5>Summer shorts</h5>
-										<span class="d-block card-cat">Man</span>
-										<span class="d-block card-price">$52.00</span>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature2.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
+							<div class="col-md-3">
+								<div class="feature-card">
+									<img src="images/feature1.jpg" alt="Featured product" />
+									<div class="card-info">
+										<div class="card-details">
+											<div class="cart-fav">
+												<span><i class="fas fa-shopping-cart"></i></span>
+												<span><i class="far fa-heart"></i></span>
+											</div>
+											<h5>Summer shorts</h5>
+											<span class="d-block card-cat">Man</span>
+											<span class="d-block card-price">$52.00</span>
 										</div>
-										<h5>Stylish shirt</h5>
-										<span class="d-block card-cat">Woman</span>
-										<span class="d-block card-price">$99.00</span>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature3.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
+							<div class="col-md-3">
+								<div class="feature-card">
+									<img src="images/feature2.jpg" alt="Featured product" />
+									<div class="card-info">
+										<div class="card-details">
+											<div class="cart-fav">
+												<span><i class="fas fa-shopping-cart"></i></span>
+												<span><i class="far fa-heart"></i></span>
+											</div>
+											<h5>Stylish shirt</h5>
+											<span class="d-block card-cat">Woman</span>
+											<span class="d-block card-price">$99.00</span>
 										</div>
-										<h5>Classic jacket</h5>
-										<span class="d-block card-cat">Man</span>
-										<span class="d-block card-price">$49.99</span>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="feature-card">
-								<img src="images/feature4.jpg" alt="Featured product" />
-								<div class="card-info">
-									<div class="card-details">
-										<div class="cart-fav">
-											<span><i class="fas fa-shopping-cart"></i></span>
-											<span><i class="far fa-heart"></i></span>
+							<div class="col-md-3">
+								<div class="feature-card">
+									<img src="images/feature3.jpg" alt="Featured product" />
+									<div class="card-info">
+										<div class="card-details">
+											<div class="cart-fav">
+												<span><i class="fas fa-shopping-cart"></i></span>
+												<span><i class="far fa-heart"></i></span>
+											</div>
+											<h5>Classic jacket</h5>
+											<span class="d-block card-cat">Man</span>
+											<span class="d-block card-price">$49.99</span>
 										</div>
-										<h5>Wool lined parka</h5>
-										<span class="d-block card-cat">Woman</span>
-										<span class="d-block card-price">$52.00</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="feature-card">
+									<img src="images/feature1.jpg" alt="Featured product" />
+									<div class="card-info">
+										<div class="card-details">
+											<div class="cart-fav">
+												<span><i class="fas fa-shopping-cart"></i></span>
+												<span><i class="far fa-heart"></i></span>
+											</div>
+											<h5>Summer shorts</h5>
+											<span class="d-block card-cat">Man</span>
+											<span class="d-block card-price">$52.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="feature-card">
+									<img src="images/feature4.jpg" alt="Featured product" />
+									<div class="card-info">
+										<div class="card-details">
+											<div class="cart-fav">
+												<span><i class="fas fa-shopping-cart"></i></span>
+												<span><i class="far fa-heart"></i></span>
+											</div>
+											<h5>Wool lined parka</h5>
+											<span class="d-block card-cat">Woman</span>
+											<span class="d-block card-price">$52.00</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -452,42 +509,48 @@
 				<div class="col-md-10 col-md-offset-1 mb-10">
 					<div class="row">
 						<div class="col-md-4 overlay pb-1">
-							<img src="images/blog1.jpg" alt="Image here" />
-							<div class="opa-3"></div>
-							<div class="blog-overlay">
-								<span class="d-block blog-cat">sport</span>
-								<h2 class="mt-1">24 Hours in Shopping</h2>
-								<h4>
-									By,<a href="#"> DAN SHAW</a>
-									<span>.</span>
-									<span class="blog-date"> MAY 31,2017</span>
-								</h4>
+							<div class="img-hover-zoom">
+								<img src="images/blog1.jpg" alt="Image here" />
+								<div class="opa-3"></div>
+								<div class="blog-overlay">
+									<span class="d-block blog-cat">sport</span>
+									<h2 class="mt-1">24 Hours in Shopping</h2>
+									<h4>
+										By,<a href="#"> DAN SHAW</a>
+										<span>.</span>
+										<span class="blog-date"> MAY 31,2017</span>
+									</h4>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 overlay pb-1">
-							<img src="images/blog2.jpg" alt="Image here" />
-							<div class="opa-3"></div>
-							<div class="blog-overlay">
-								<span class="d-block blog-cat">design</span>
-								<h2 class="mt-1">How to Design with Colors</h2>
-								<h4>
-									By,<a href="#"> DAN SHAW</a>
-									<span>.</span>
-									<span class="blog-date"> MAY 31,2017</span>
-								</h4>
+							<div class="img-hover-zoom--slowmo">
+								<img src="images/blog2.jpg" alt="Image here" />
+								<div class="opa-3"></div>
+								<div class="blog-overlay">
+									<span class="d-block blog-cat">design</span>
+									<h2 class="mt-1">How to Design with Colors</h2>
+									<h4>
+										By,<a href="#"> DAN SHAW</a>
+										<span>.</span>
+										<span class="blog-date"> MAY 31,2017</span>
+									</h4>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 overlay">
-							<img src="images/blog3.jpg" alt="Image here" />
-							<div class="opa-3"></div>
-							<div class="blog-overlay">
-								<span class="d-block blog-cat">photography</span>
-								<h2 class="mt-1">Stunning Woman's Capture</h2>
-								<h4>
-									By,<a href="#"> DAN SHAW</a>
-									<span>.</span>
-									<span class="blog-date"> MAY 31,2017</span>
-								</h4>
+							<div class="img-hover-zoom--blur">
+								<img class="show" src="images/blog3.jpg" alt="Image here" />
+								<div class="opa-3"></div>
+								<div class="blog-overlay">
+									<span class="d-block blog-cat">photography</span>
+									<h2 class="mt-1 green">Stunning Woman's Capture</h2>
+									<h4>
+										By,<a href="#"> DAN SHAW</a>
+										<span>.</span>
+										<span class="blog-date"> MAY 31,2017</span>
+									</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -627,6 +690,8 @@
 			integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
 			crossorigin="anonymous"
 		></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
